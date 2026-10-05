@@ -1,0 +1,85 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(music-player.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:430px;
+    width:90%;
+    max-width:330px;
+    background-color: rgb(34, 1, 19);
+    align-items: center;
+    border-radius: 10px;
+    margin: 130px auto 0;
+    border:2px solid whitesmoke ;
+    animation : color 3s ease-in-out 0s infinite normal;
+    
+
+}
+@keyframes color {
+    0%{
+        background-color:  rgb(34, 1, 19);
+    }
+    50%{
+        background-color: rgb(15, 6, 31) ;
+    }
+    100%{
+        background-color:  rgb(46, 3, 3);
+    }
+}
+#music-box {
+    height : 250px;
+    width : 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgb(3, 59, 75);
+    border: 2px solid rgb(7, 7, 7);
+    margin-bottom: 8px;
+    text-align: center;
+    animation : rotate 2s ease-in-out 0s infinite normal;
+
+
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#icons {
+    height: 100px;
+    width:100px;
+    align-content: center;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-top: 20px;
+   
+
+}
+
+#buttons {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#range {
+    margin-bottom: 18px;
+    font-size: larger;
+    
+}
+h5 {
+    text-align: center;
+    margin-top: 15px;
+    color:whitesmoke;
+}
+
